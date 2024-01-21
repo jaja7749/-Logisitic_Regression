@@ -35,10 +35,13 @@ Here are the key components and concepts associated with logistic regression:
 7. Loss function:
    - The loss function on logistic regression deals with binary classification problems, where the output is a probability score between 0 and 1. For logistic regression, the more appropriate loss function is the logistic loss (or cross-entropy loss). However, we still can use MSE loss to calculate the loss.
 
+     $`loss = \frac{1}{2}(y-\hat{y})^{2}`$
+
 8. Update weight (Stochastic Gradient Descent):
    - Stochastic Gradient Descent (SGD) is an optimization algorithm commonly used to train machine learning models, including logistic regression. The idea behind SGD is to update the model parameters (weights and biases) iteratively based on the gradient of the loss function with respect to the parameters. The updates are performed for each training sample, making it a stochastic process.
 
      $`\omega _i^{(n+1)}=\omega _i^{(n)}-\eta (\frac{\partial L}{\partial \omega })`$
+     $`\frac{\partial L}{\partial \omega }=(y-\sigma (\omega ^{T}x))\cdot (- {\sigma}'(\omega ^{T}x))\cdot x`$
 
      where $`\eta`$ is learning rate
 
