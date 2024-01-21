@@ -106,8 +106,10 @@ cm = confusion_matrix(y, y_pred, labels=[0, 1])
 cm_display = ConfusionMatrixDisplay(cm, display_labels=[0, 1])
 cm_display.plot()
 plt.show()
+
+# Accuracy: 99.049 %
 ```
-![image](https://github.com/jaja7749/Bayes_Classifier/blob/main/images/Naive%20Bayes%20confusion%20matrix.png)
+![image](https://github.com/jaja7749/-Logisitic_Regression/blob/main/images/LR%20cm.png)
 
 Also we can check the loss to epoch chart:
 ```ruby
@@ -119,7 +121,7 @@ plt.ylabel("loss")
  
 plt.show()
 ```
-![image](https://github.com/jaja7749/Bayes_Classifier/blob/main/images/Naive%20Bayes%20confusion%20matrix.png)
+![image](https://github.com/jaja7749/-Logisitic_Regression/blob/main/images/LR%20loss.png)
 
 And test the new data:
 ```ruby
