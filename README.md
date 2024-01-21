@@ -41,6 +41,7 @@ Here are the key components and concepts associated with logistic regression:
    - Stochastic Gradient Descent (SGD) is an optimization algorithm commonly used to train machine learning models, including logistic regression. The idea behind SGD is to update the model parameters (weights and biases) iteratively based on the gradient of the loss function with respect to the parameters. The updates are performed for each training sample, making it a stochastic process.
 
      $`\omega _i^{(n+1)}=\omega _i^{(n)}-\eta (\frac{\partial L}{\partial \omega })`$
+     
      $`\frac{\partial L}{\partial \omega }=(y-\sigma (\omega ^{T}x))\cdot (- {\sigma}'(\omega ^{T}x))\cdot x`$
 
      where $`\eta`$ is learning rate
